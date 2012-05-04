@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="open" deactivate="dispose" name="control">
+   <implementation class="com.remainsoftware.control.ControlControl"/>
+   <reference bind="bindStoreService" cardin1..1y="0..1" cardinality="0..1" interface="com.remainsoftware.model.IStoreService" name="IStoreService" policy="dynamic" unbind="unbindStoreService"/>
+   <reference bind="bindUserService" cardinality="0..1" interface="com.remainsoftware.model.IUserService" name="IUserService" policy="dynamic" unbind="unbindUserService"/>
+</scr:component>

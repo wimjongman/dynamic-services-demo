@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Store
+Bundle-SymbolicName: com.remainsoftware.store
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: REMAINSOFTWARE
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Service-Component: OSGI-INF/*.xml
+Import-Package: com.remainsoftware.model,
+ org.osgi.framework;version="1.6.0"
+Bundle-ActivationPolicy: lazy

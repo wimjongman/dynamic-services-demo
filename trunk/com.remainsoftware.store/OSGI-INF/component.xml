@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="start" deactivate="stop" enabled="true" immediate="false" name="Store Service">
+   <implementation class="com.remainsoftware.store.internal.StoreServiceImpl"/>
+   <service>
+      <provide interface="com.remainsoftware.model.IStoreService"/>
+   </service>
+   <reference bind="registerUserService" cardinality="0..1" interface="com.remainsoftware.model.IUserService" name="IUserService" policy="dynamic"/>
+</scr:component>

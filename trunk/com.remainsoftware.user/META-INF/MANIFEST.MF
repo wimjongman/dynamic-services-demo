@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: User
+Bundle-SymbolicName: com.remainsoftware.user
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.remainsoftware.user.Activator
+Bundle-Vendor: REMAINSOFTWARE
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Service-Component: OSGI-INF/*.xml
+Import-Package: com.remainsoftware.model,
+ org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.swt;bundle-version="3.7.1"
